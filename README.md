@@ -17,3 +17,8 @@
 - zsh
 - [OhMyZsh](https://ohmyz.sh/)
 - [ZSH autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
+
+## Windows
+- Settings > Keyboard Properties > Repeat delay > short
+- Settings > Keyboard Properties > Repeat rate > fast
+- WSL
