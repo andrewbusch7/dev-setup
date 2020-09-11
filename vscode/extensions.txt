@@ -1,0 +1,6 @@
+ms-vscode.azure-account
+ms-azuretools.vscode-azurefunctions
+ms-dotnettools.csharp
+eamodio.gitlens
+ms-vscode-remote.remote-wsl
+jmfirth.vsc-space-block-jumper

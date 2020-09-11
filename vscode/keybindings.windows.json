@@ -1,0 +1,18 @@
+[
+    {
+        "key": "ctrl+alt+win+up",
+        "command": "spaceBlockJumper.moveUp"
+    },
+    {
+        "key": "ctrl+alt+win+down",
+        "command": "spaceBlockJumper.moveDown"
+    },
+    {
+        "key": "ctrl+shift+alt+win+up",
+        "command": "spaceBlockJumper.selectUp"
+    },
+    {
+        "key": "ctrl+shift+alt+win+down",
+        "command": "spaceBlockJumper.selectDown"
+    }
+]
