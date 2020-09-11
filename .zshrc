@@ -20,7 +20,7 @@ alias gp="git pull -r"
 alias gps="git push"
 alias gm="git merge"
 alias gmm="git merge master"
-alias grh="git reset hard"
+alias grh="git reset --hard"
 
 #node
 alias ni="npm i"
@@ -28,4 +28,3 @@ alias ni="npm i"
 # WSL
 alias do="dotnet.exe"
 alias c="/mnt/c/Users/andrew/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe"
-
