@@ -2,6 +2,9 @@ export ZSH="/home/andrew/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
+# below avoids warnings on zsh-autosuggestions for WSL Debian, need to test on macOS & straight linux
+ZSH_DISABLE_COMPFIX=true
+
 plugins=(git)
 plugins=(zsh-autosuggestions)
 
@@ -15,9 +18,11 @@ alias gclean="git clean -xfd"
 alias gch="git checkout"
 alias gchb="git checkout -b"
 alias gchm="git checkout master"
+alias gfp="git fetch -p && git pull -r"
 alias gl="git log"
 alias gp="git pull -r"
 alias gps="git push"
+alias gpsh="git push -u origin HEAD"
 alias gm="git merge"
 alias gmm="git merge master"
 alias grh="git reset --hard"
