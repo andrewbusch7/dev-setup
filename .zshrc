@@ -2,16 +2,26 @@ export ZSH="/home/andrew/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-# below avoids warnings on zsh-autosuggestions for WSL Debian, need to test on macOS & straight linux
-ZSH_DISABLE_COMPFIX=true
-
 plugins=(git)
-plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-# git
+# OS
+
+## *nix
+plugins=(zsh-autosuggestions)
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+## WSL
+alias do="dotnet.exe"
+alias c="/mnt/c/Users/andrew/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe"
+ZSH_DISABLE_COMPFIX=true
+
+# Tools
+
+## git
 alias ga="git add -A && git diff --cached"
+alias gan="git add -A && git diff --cached --name-only"
 alias gc="git commit -m"
 alias gcl="git clone"
 alias gclean="git clean -xfd"
@@ -27,9 +37,15 @@ alias gm="git merge"
 alias gmm="git merge master"
 alias grh="git reset --hard"
 
-#node
+## node
 alias ni="npm i"
 
-# WSL
-alias do="dotnet.exe"
-alias c="/mnt/c/Users/andrew/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe"
+### *nix
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+## dotnet
+export ASPNETCORE_ENVIRONMENT=Development
+
+# Programs
+alias c="code"
