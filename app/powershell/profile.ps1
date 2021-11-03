@@ -2,8 +2,9 @@
 Set-PSReadLineOption -PredictionSource History
 
 # Aliases (as functions)
+function ..() { Set-Location .. }
 function c([string] $Path) { code $Path }
-function c. { c . }
+function c. { code . }
 function ga { git add -A; git diff --cached }
 function gan { git add -A; git diff --cached --name-only }
 function gco([string] $Message) { git commit -m $Message }
@@ -19,6 +20,6 @@ function gpl { git pull -r }
 function gpus { git push }
 function gpush { git push -u origin HEAD }
 function gme([string] $Branch) { git merge $Branch }
-function gmem { gme master }
+function gmem { git merge master }
 function grh { git reset --hard }
 function nmi { npm i }
