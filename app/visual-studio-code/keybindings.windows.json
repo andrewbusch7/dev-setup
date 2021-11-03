@@ -14,5 +14,10 @@
     {
         "key": "ctrl+shift+alt+win+down",
         "command": "spaceBlockJumper.selectDown"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeWindow",
+        "when": "!editorIsOpen"
     }
 ]
