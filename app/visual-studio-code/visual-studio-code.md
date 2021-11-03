@@ -9,6 +9,7 @@
 4. Install extensions via Bash or Powershell
 
    ```sh
+   code --install-extension auchenberg.vscode-open-file-folder
    code --install-extension compulim.vscode-clock
    code --install-extension eamodio.gitlens
    code --install-extension jmfirth.vsc-space-block-jumper
