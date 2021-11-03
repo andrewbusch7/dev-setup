@@ -23,6 +23,7 @@ ZSH_DISABLE_COMPFIX=true
 alias ga="git add -A && git diff --cached"
 alias gan="git add -A && git diff --cached --name-only"
 alias gc="git commit -m"
+alias gcc="git commit -m"
 alias gcl="git clone"
 alias gclean="git clean -xfd"
 alias gch="git checkout"
