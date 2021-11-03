@@ -1,3 +1,8 @@
+# Visual Studio Code Setup
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+- Extensions
+
 ms-vscode.azure-account
 ms-azuretools.vscode-azurefunctions
 ms-dotnettools.csharp
