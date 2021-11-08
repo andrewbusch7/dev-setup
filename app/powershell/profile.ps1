@@ -13,6 +13,7 @@ function gcl([string] $Repository) { git clone $Repository }
 function gclean { git clean -xfd } # the dangerous one
 function gch([string] $Branch) { git checkout $Branch }
 function gchb([string] $Branch) { git checkout -b $Branch }
+function gchd { git checkout develop }
 function gchm { git checkout master }
 function gfp { git fetch -p; git pull -r }
 function glg { git log }
@@ -20,6 +21,7 @@ function gpl { git pull -r }
 function gpus { git push }
 function gpush { git push -u origin HEAD }
 function gme([string] $Branch) { git merge $Branch }
+function gmed { git merge develop }
 function gmem { git merge master }
 function grh { git reset --hard }
 function nmi { npm i }
