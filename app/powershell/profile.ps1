@@ -24,4 +24,4 @@ function gme([string] $Branch) { git merge $Branch }
 function gmed { git merge develop }
 function gmem { git merge master }
 function grh { git reset --hard }
-function nmi { npm i }
+function nmi { npm install --prefer-offline --no-audit --progress=false }
